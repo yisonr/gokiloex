@@ -1,4 +1,4 @@
-module kiloex
+module gokiloex
 
 go 1.21.5
 

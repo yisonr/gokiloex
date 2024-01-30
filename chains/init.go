@@ -1,7 +1,7 @@
 package chains
 
 import (
-	"kiloex/config"
+	"gokiloex/config"
 	"log"
 
 	"github.com/ethereum/go-ethereum/ethclient"

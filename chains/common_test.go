@@ -1,7 +1,7 @@
 package chains
 
 import (
-	"kiloex/config"
+	"gokiloex/config"
 	"math/big"
 	"testing"
 )

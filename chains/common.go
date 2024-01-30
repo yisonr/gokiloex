@@ -103,7 +103,6 @@ func SendTransaction(transaction TransactionSt) (string, error) {
 
 	chainID, err := EthClient.NetworkID(context.Background()) // 确保是BSC的Chain ID
 
-	// 设置EIP-1559交易的参数
 	// 使用types.NewTx创建EIP-1559类型的交易
 	tx := types.NewTx(&types.DynamicFeeTx{
 		ChainID:   chainID,
