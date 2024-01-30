@@ -17,7 +17,7 @@ func Approve(approve ApproveSt) (string, error) {
 	data := BuildABIData(approveMethodBytes, contractBytes, amountBytes)
 
 	var approveTrans = TransactionSt{
-		SK:                   SK,
+		SK:                   config.SK,
 		ContractAddress:      approve.TokenAddress,
 		MethodId:             approveMethodBytes,
 		MaxPriorityFeePerGas: config.MaxPriorityFeePerGas,

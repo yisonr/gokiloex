@@ -132,6 +132,9 @@ func SendTransaction(transaction TransactionSt) (string, error) {
 	return signedTx.Hash().Hex(), nil
 }
 
+// TODO:
+// MQ提高稳定性
+// DB数据持久化
 func CheckTransaction(tx string) (bool, error) {
 	txHash := common.HexToHash(tx)
 

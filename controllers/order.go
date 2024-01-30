@@ -1,5 +1,5 @@
 package controllers
 
 func PlaceOrder() {
-	// 授权
+	// 查询余额
 }

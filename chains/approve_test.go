@@ -1,6 +1,7 @@
 package chains
 
 import (
+	"kiloex/config"
 	"math/big"
 	"testing"
 
@@ -8,9 +9,9 @@ import (
 )
 
 func TestApprove(t *testing.T) {
-	usdtToken := common.HexToAddress(OpBNBTokenUsdt)
+	usdtToken := common.HexToAddress(config.OpBNBTokenUsdt)
 
-	approveAddress := common.HexToAddress(OrderContractAddress)
+	approveAddress := common.HexToAddress(config.OrderContractAddress)
 	amount := big.NewInt(5000000000) // usdt decimal=8
 
 	var approveUsdt ApproveSt

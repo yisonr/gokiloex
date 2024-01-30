@@ -1,12 +1,13 @@
 package chains
 
 import (
+	"kiloex/config"
 	"math/big"
 	"testing"
 )
 
 func TestGetBalance(t *testing.T) {
-	balance, err := GetBalance(OpBNBTokenUsdt, Wallet)
+	balance, err := GetBalance(config.OpBNBTokenUsdt, config.Wallet)
 	if err != nil {
 		t.Fatal(err)
 	}
